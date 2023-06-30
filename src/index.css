@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Press+Start+2P&family=Roboto:wght@300&family=VT323&display=swap');
+
+body {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #8c00ff;
+  background-size: cover;
+}
+
+code {
+  font-family: "Roboto", sans-serif;
+}

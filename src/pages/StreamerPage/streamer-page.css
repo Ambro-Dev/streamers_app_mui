@@ -1,0 +1,255 @@
+
+.streamer-page-top {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    height: 100px;
+}
+
+.streamer-page-top > img {
+    cursor: pointer;
+}
+
+
+.streamer-page-top h1 {
+    font-size: 3rem;
+    text-align: center;
+    font-family: "VT323", monospace;
+    margin-left: 20px;
+}
+
+.streamer-page-content-top {
+    display: flex;
+    flex-direction: column;
+}
+
+.streamer-page-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 20px 20px;
+}
+
+.streamer-page-content-left {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.streamer-page-content-right {
+    width: calc(100% - 20px);
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.streamer-page-content-right > img {
+    height: 50%;
+    width: auto;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.streamer-page-content-description > span {
+    font-size: 1.5rem;
+    font-family: "VT323", monospace;
+    margin: 0 10px;
+}
+
+.streamer-page-content-description {
+    margin-bottom: 10px;
+}
+
+
+@media screen and (max-width: 830px) {
+    .streamer-page-top > img {
+        height: 40px;
+        width: 40px;
+    }
+
+    .streamer-page-top h1 {
+        font-size: 2.5rem;
+    }
+
+    .streamer-page-top {
+        height: 80px;
+    }
+
+    .streamer-page-content {
+        flex-direction: column-reverse;
+        justify-content: center;
+    }
+
+    .streamer-page-content-right > img {
+        width: 70%;
+        height: auto;
+    }
+
+    .platform-image {
+        top: 60px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .platform-image {
+        top: 70px;
+        width: 40px;
+        height: 40px;
+    }
+    .platform-image > img {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+
+@media screen and (min-width: 831px) and (max-width: 1100px) {
+
+    .streamer-page-content-right > img {
+        width: 70%;
+        height: auto;
+    }
+
+    .streamer-page-content-right {
+        justify-content: unset;
+        align-items: center;
+    }
+}
+
+.streamer-page-voting {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0;
+    width: 100%;
+    height: 100px;
+}
+
+.streamer-page-voting > button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    margin: 0 10px;
+    border: 2px solid transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    width: 50px;
+    transition: 0.2s;
+    border-radius: 50%;
+}
+
+.streamer-page-voting > img {
+    height: 100%;
+    width: auto;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.voting-button-plus:hover {
+    border: 3px solid #00e645;
+    transform: scale(1.1);
+}
+
+.voting-button-minus:hover {
+    border: 3px solid #ff0000;
+    transform: scale(1.1);
+}
+
+.all-votes-box {
+    width: calc(100% - 30px);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100px;
+    padding: 15px;
+}
+
+.all-votes-box > span {
+    font-size: 2rem;
+    font-family: "VT323", monospace;
+    margin: 0 10px;
+    width: 50%;
+    text-align: center;
+}
+
+.all-votes-box-results {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 100px;
+}
+
+.all-votes-box-bar {
+    width: 100%;
+    height: 20px;
+    background-color: transparent;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.all-votes-box-bar-down {
+    height: 100%;
+    background-color: #ff0000;
+    border-radius: 0px 10px 10px 0px;
+    transition: 0.5s;
+}
+
+.all-votes-box-bar-up {
+    height: 100%;
+    background-color: #00e645;
+    border-radius: 10px 0  0px 10px;
+    transition: 0.5s;
+}
+
+.all-votes-box-percentage {
+    font-size: 1.5rem;
+    font-family: "VT323", monospace;
+    margin: 0 10px;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+}
+
+.all-votes-box-percentage-up {
+    display: block;
+}
+
+.all-votes-box-percentage-up {
+    display: block;
+}
+
+.result-up {
+    color: #00e645;
+    padding: 0 5px;
+}
+
+.result-down {
+    color: #ff0000;
+    padding: 0 5px;
+}
+
+.platform-image {
+    position: absolute;
+    top: 90px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.platform-image > img {
+        width: 50px;
+        height: 50px;
+    }
